@@ -388,6 +388,13 @@ This project demonstrates a practical workflow where **Python + Power BI + AI-as
 | **AI Assistance** | Development, debugging & workflow support |
 
 ---
+## 📦 Power BI Report File
+
+The complete Power BI report (`.pbix`) is approximately **272 MB** and is therefore not stored directly in this GitHub repository due to GitHub's file-size limits.
+
+The repository contains the core Python pipeline, project documentation, sample datasets, dashboard screenshots, and analytical methodology.
+
+The full Power BI report can be provided separately upon request.
 
 # 📐 Key Analytical Metrics
 
