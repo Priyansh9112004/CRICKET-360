@@ -317,6 +317,14 @@ Project information, scope and dashboard context.
 
 ---
 
+## 🔗 Power BI Dashboard
+
+[**Open CRICKET 360 in Power BI**](https://app.powerbi.com/links/blC_2mVsZQ?ctid=2864f9ea-0c7b-42dd-9963-ebea1864a44d&pbi_source=linkShare&bookmarkGuid=9c1eec19-64aa-481c-a6de-88965ba7e0e2)
+
+> **Access note:** This is a Power BI sharing link, not a Publish-to-web public embed. Availability depends on the report's Power BI sharing permissions and may require sign-in or granted access.
+
+---
+
 # 🖼️ Dashboard Preview
 
 ## Home
