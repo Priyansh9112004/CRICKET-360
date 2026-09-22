@@ -1,0 +1,101 @@
+player_id,player,match_id,bowling_team,opponent_team,runs_conceded,legal_balls,wickets,Economy,Bowling_Strike_Rate,extras_conceded,wides_conceded,noballs_conceded,byes,legbyes,penalty,all_extras
+1,A Adekunle,1411263,Nigeria,Namibia,22,24,1,5.5,24.0,1,1,0,0,0,0,1
+1,A Adekunle,1411267,Nigeria,Rwanda,16,24,0,4.0,,0,0,0,1,0,0,1
+1,A Adekunle,1411272,Nigeria,Uganda,13,18,2,4.33,9.0,0,0,0,0,0,0,0
+1,A Adekunle,1423464,Nigeria,Namibia,15,24,1,3.75,24.0,0,0,0,0,0,0,0
+1,A Adekunle,1423472,Nigeria,Zimbabwe,14,18,1,4.67,18.0,1,1,0,0,0,0,1
+1,A Adekunle,1423473,Nigeria,Uganda,12,24,1,3.0,24.0,0,0,0,0,0,0,0
+1,A Adekunle,1435621,Nigeria,Kenya,18,12,0,9.0,,0,0,0,0,0,0,0
+1,A Adekunle,1435623,Nigeria,Uganda,15,24,3,3.75,8.0,0,0,0,0,0,0,0
+1,A Adekunle,1435628,Nigeria,Cameroon,3,24,1,0.75,24.0,0,0,0,0,0,0,0
+1,A Adekunle,1435634,Nigeria,Rwanda,21,24,0,5.25,,2,2,0,0,0,0,2
+1,A Adekunle,1435644,Nigeria,Malawi,22,24,0,5.5,,3,2,1,0,0,0,3
+1,A Adekunle,1435648,Nigeria,Rwanda,7,6,0,7.0,,0,0,0,0,0,0,0
+1,A Adekunle,1487699,Nigeria,Brazil,9,6,0,9.0,,3,3,0,0,0,0,3
+1,A Adekunle,1498707,Nigeria,Sierra Leone,10,18,1,3.33,18.0,3,3,0,0,0,0,3
+1,A Adekunle,1526699,Nigeria,Rwanda,13,12,0,6.5,,1,1,0,0,0,0,1
+1,A Adekunle,1528293,Nigeria,Rwanda,10,18,1,3.33,18.0,1,1,0,0,0,0,1
+1,A Adekunle,1539491,Nigeria,Malawi,15,24,3,3.75,8.0,2,2,0,0,0,0,2
+1,A Adekunle,1539493,Nigeria,Brazil,19,12,1,9.5,12.0,1,1,0,0,0,0,1
+1,A Adekunle,1539496,Nigeria,Rwanda,26,24,2,6.5,12.0,0,0,0,0,0,0,0
+1,A Adekunle,1539501,Nigeria,Malawi,15,24,0,3.75,,2,2,0,0,0,0,2
+1,A Adekunle,1539503,Nigeria,Brazil,13,6,0,13.0,,0,0,0,0,0,0,0
+1,A Adekunle,1539509,Nigeria,Rwanda,31,24,1,7.75,24.0,2,2,0,0,0,0,2
+1,A Adekunle,1539510,Nigeria,Brazil,16,24,2,4.0,12.0,0,0,0,0,0,0,0
+10,A Alfonso,1528325,Malawi,Botswana,15,24,1,3.75,24.0,2,2,0,0,0,0,2
+100,A Dizija,1317138,Serbia,Bulgaria,16,6,0,16.0,,0,0,0,0,1,0,1
+100,A Dizija,1317139,Serbia,Bulgaria,63,18,0,21.0,,6,5,1,0,0,0,6
+100,A Dizija,1400053,Serbia,Gibraltar,32,19,1,10.11,19.0,2,2,0,0,0,0,2
+100,A Dizija,1400054,Serbia,Gibraltar,17,18,1,5.67,18.0,2,2,0,0,0,0,2
+10001,Rashid Hussain,746097,Bahrain,Saudi Arabia,20,36,1,3.33,36.0,10,10,0,1,0,0,11
+10002,Rashid Khan,1063047,Comilla Victorians,Rajshahi Kings,16,24,1,4.0,24.0,1,1,0,0,2,0,3
+10002,Rashid Khan,1063050,Comilla Victorians,Dhaka Dynamites,28,24,3,7.0,8.0,5,5,0,1,2,0,8
+10002,Rashid Khan,1063062,Comilla Victorians,Khulna Titans,25,24,1,6.25,24.0,0,0,0,5,4,0,9
+10002,Rashid Khan,1063066,Comilla Victorians,Rangpur Riders,32,24,0,8.0,,0,0,0,0,0,0,0
+10002,Rashid Khan,1063075,Comilla Victorians,Dhaka Dynamites,26,24,2,6.5,12.0,2,2,0,0,0,0,2
+10002,Rashid Khan,1063079,Comilla Victorians,Barisal Bulls,21,24,2,5.25,12.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1063087,Comilla Victorians,Rangpur Riders,13,24,3,3.25,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082591,Sunrisers Hyderabad,Royal Challengers Bangalore,36,24,2,9.0,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082596,Sunrisers Hyderabad,Gujarat Lions,19,24,3,4.75,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082600,Sunrisers Hyderabad,Mumbai Indians,19,24,1,4.75,24.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1082604,Sunrisers Hyderabad,Kolkata Knight Riders,29,24,1,7.25,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082609,Sunrisers Hyderabad,Kings XI Punjab,42,24,2,10.5,12.0,1,1,0,0,3,0,4
+10002,Rashid Khan,1082611,Sunrisers Hyderabad,Delhi Daredevils,33,24,0,8.25,,0,0,0,1,1,0,2
+10002,Rashid Khan,1082615,Sunrisers Hyderabad,Rising Pune Supergiant,17,24,1,4.25,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082623,Sunrisers Hyderabad,Kings XI Punjab,16,24,1,4.0,24.0,0,0,0,0,2,0,2
+10002,Rashid Khan,1082627,Sunrisers Hyderabad,Kolkata Knight Riders,38,24,1,9.5,24.0,3,3,0,0,0,0,3
+10002,Rashid Khan,1082630,Sunrisers Hyderabad,Delhi Daredevils,24,24,0,6.0,,0,0,0,0,1,0,1
+10002,Rashid Khan,1082634,Sunrisers Hyderabad,Rising Pune Supergiant,18,24,1,4.5,24.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1082638,Sunrisers Hyderabad,Mumbai Indians,22,24,1,5.5,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082643,Sunrisers Hyderabad,Gujarat Lions,34,24,3,8.5,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1082648,Sunrisers Hyderabad,Kolkata Knight Riders,11,12,0,5.5,,2,2,0,0,0,0,2
+10002,Rashid Khan,1094673,Guyana Amazon Warriors,St Kitts and Nevis Patriots,25,24,0,6.25,,1,1,0,3,1,0,5
+10002,Rashid Khan,1094675,Guyana Amazon Warriors,St Kitts and Nevis Patriots,36,24,0,9.0,,1,1,0,0,0,0,1
+10002,Rashid Khan,1094680,Guyana Amazon Warriors,Trinbago Knight Riders,18,24,0,4.5,,0,0,0,0,1,0,1
+10002,Rashid Khan,1094683,Guyana Amazon Warriors,St Lucia Stars,9,24,2,2.25,12.0,1,1,0,0,1,0,2
+10002,Rashid Khan,1094686,Guyana Amazon Warriors,Jamaica Tallawahs,38,24,2,9.5,12.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1094688,Guyana Amazon Warriors,Trinbago Knight Riders,11,18,0,3.67,,3,3,0,0,0,0,3
+10002,Rashid Khan,1094690,Guyana Amazon Warriors,Barbados Tridents,21,24,1,5.25,24.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1094692,Guyana Amazon Warriors,St Lucia Stars,19,24,2,4.75,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1094696,Guyana Amazon Warriors,Barbados Tridents,15,22,3,4.09,7.33,0,0,0,4,3,0,7
+10002,Rashid Khan,1094699,Guyana Amazon Warriors,Jamaica Tallawahs,25,24,0,6.25,,0,0,0,4,3,0,7
+10002,Rashid Khan,1094703,Guyana Amazon Warriors,Jamaica Tallawahs,32,24,3,8.0,8.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1094704,Guyana Amazon Warriors,Trinbago Knight Riders,23,24,1,5.75,24.0,1,1,0,0,1,0,2
+10002,Rashid Khan,1114859,Adelaide Strikers,Sydney Thunder,22,24,2,5.5,12.0,3,3,0,0,0,0,3
+10002,Rashid Khan,1114864,Adelaide Strikers,Sydney Sixers,22,24,2,5.5,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114867,Adelaide Strikers,Brisbane Heat,19,24,2,4.75,12.0,1,1,0,0,0,0,1
+10002,Rashid Khan,1114872,Adelaide Strikers,Hobart Hurricanes,18,24,2,4.5,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114875,Adelaide Strikers,Sydney Thunder,21,24,2,5.25,12.0,0,0,0,4,0,0,4
+10002,Rashid Khan,1114878,Adelaide Strikers,Melbourne Stars,23,24,1,5.75,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114882,Adelaide Strikers,Perth Scorchers,15,24,1,3.75,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114886,Adelaide Strikers,Hobart Hurricanes,35,24,0,8.75,,3,3,0,1,1,0,5
+10002,Rashid Khan,1114890,Adelaide Strikers,Melbourne Renegades,26,24,2,6.5,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114893,Adelaide Strikers,Perth Scorchers,20,24,3,5.0,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1114897,Adelaide Strikers,Melbourne Renegades,28,24,1,7.0,24.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1121247,Comilla Victorians,Sylhet Sixers,18,24,1,4.5,24.0,0,0,0,0,3,0,3
+10002,Rashid Khan,1121249,Comilla Victorians,Chittagong Vikings,21,24,0,5.25,,0,0,0,0,0,0,0
+10002,Rashid Khan,1121256,Comilla Victorians,Rajshahi Kings,7,24,1,1.75,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1121258,Comilla Victorians,Chittagong Vikings,17,24,1,4.25,24.0,0,0,0,4,0,0,4
+10002,Rashid Khan,1121264,Comilla Victorians,Rangpur Riders,19,24,2,4.75,12.0,6,6,0,0,0,0,6
+10002,Rashid Khan,1121265,Comilla Victorians,Dhaka Dynamites,17,24,1,4.25,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1121271,Comilla Victorians,Rajshahi Kings,26,24,0,6.5,,1,1,0,0,0,0,1
+10002,Rashid Khan,1127448,Sussex,Essex,25,24,2,6.25,12.0,7,7,0,0,1,0,8
+10002,Rashid Khan,1127464,Sussex,Glamorgan,27,24,2,6.75,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1127471,Sussex,Hampshire,25,24,1,6.25,24.0,2,2,0,0,0,0,2
+10002,Rashid Khan,1127478,Sussex,Surrey,40,24,0,10.0,,0,0,0,0,0,0,0
+10002,Rashid Khan,1127498,Sussex,Kent,12,12,1,6.0,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1127513,Sussex,Gloucestershire,14,24,2,3.5,12.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1127517,Sussex,Middlesex,39,24,0,9.75,,0,0,0,0,0,0,0
+10002,Rashid Khan,1127533,Sussex,Somerset,29,24,3,7.25,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1127559,Sussex,Glamorgan,9,18,3,3.0,6.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1127565,Sussex,Gloucestershire,24,24,3,6.0,8.0,2,2,0,0,1,0,3
+10002,Rashid Khan,1136564,Sunrisers Hyderabad,Rajasthan Royals,23,24,1,5.75,24.0,0,0,0,0,1,0,1
+10002,Rashid Khan,1136567,Sunrisers Hyderabad,Mumbai Indians,13,24,1,3.25,24.0,1,1,0,0,4,0,5
+10002,Rashid Khan,1136570,Sunrisers Hyderabad,Kolkata Knight Riders,31,24,0,7.75,,0,0,0,0,0,0,0
+10002,Rashid Khan,1136576,Sunrisers Hyderabad,Kings XI Punjab,55,24,1,13.75,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136580,Sunrisers Hyderabad,Chennai Super Kings,49,24,1,12.25,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136583,Sunrisers Hyderabad,Mumbai Indians,11,24,2,2.75,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136585,Sunrisers Hyderabad,Kings XI Punjab,19,24,3,4.75,8.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136588,Sunrisers Hyderabad,Rajasthan Royals,31,24,1,7.75,24.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136596,Sunrisers Hyderabad,Delhi Daredevils,23,24,2,5.75,12.0,0,0,0,0,0,0,0
+10002,Rashid Khan,1136599,Sunrisers Hyderabad,Royal Challengers Bangalore,31,24,1,7.75,24.0,2,2,0,0,0,0,2

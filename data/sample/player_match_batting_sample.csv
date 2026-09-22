@@ -1,0 +1,101 @@
+player_id,batter,match_id,match_date,format,season,batting_team,opponent_team,Runs,Balls_Faced,Fours,Sixes,Strike_Rate,Dismissals,Not_Out
+1,A Adekunle,1411272,2023-12-14,T20,2023/24,Nigeria,Uganda,1,8,0,0,12.5,1,0
+1,A Adekunle,1423472,2024-03-11,T20,2023/24,Nigeria,Zimbabwe,1,2,0,0,50.0,0,1
+1,A Adekunle,1423473,2024-03-13,T20,2023/24,Nigeria,Uganda,1,3,0,0,33.33,0,1
+1,A Adekunle,1435621,2024-06-02,T20,2024,Nigeria,Kenya,0,2,0,0,0.0,1,0
+1,A Adekunle,1435623,2024-05-31,T20,2024,Nigeria,Uganda,4,8,0,0,50.0,0,1
+1,A Adekunle,1435648,2024-06-08,T20,2024,Nigeria,Rwanda,0,1,0,0,0.0,1,0
+1,A Adekunle,1487699,2025-06-04,T20,2025,Nigeria,Brazil,6,9,0,0,66.67,0,1
+1,A Adekunle,1487704,2025-06-05,T20,2025,Nigeria,Tanzania,5,3,0,0,166.67,0,1
+1,A Adekunle,1487708,2025-06-06,T20,2025,Nigeria,Rwanda,0,3,0,0,0.0,1,0
+1,A Adekunle,1498713,2025-09-01,T20,2025,Nigeria,Namibia,1,6,0,0,16.67,1,0
+1,A Adekunle,1526699,2026-03-24,T20,2025/26,Nigeria,Rwanda,2,7,0,0,28.57,1,0
+1,A Adekunle,1528293,2026-03-28,T20,2025/26,Nigeria,Rwanda,3,4,0,0,75.0,1,0
+1,A Adekunle,1539491,2026-06-10,T20,2026,Nigeria,Malawi,0,4,0,0,0.0,1,0
+1,A Adekunle,1539493,2026-06-11,T20,2026,Nigeria,Brazil,38,48,5,0,79.17,0,1
+1,A Adekunle,1539496,2026-06-12,T20,2026,Nigeria,Rwanda,5,13,0,0,38.46,1,0
+1,A Adekunle,1539501,2026-06-14,T20,2026,Nigeria,Malawi,12,21,1,0,57.14,1,0
+1,A Adekunle,1539503,2026-06-15,T20,2026,Nigeria,Brazil,5,2,1,0,250.0,0,1
+1,A Adekunle,1539509,2026-06-19,T20,2026,Nigeria,Rwanda,9,10,1,0,90.0,0,1
+1,A Adekunle,1539510,2026-06-20,T20,2026,Nigeria,Brazil,26,40,2,0,65.0,1,0
+10,A Alfonso,1435625,2024-05-31,T20,2024,Malawi,Rwanda,0,2,0,0,0.0,1,0
+10,A Alfonso,1435627,2024-06-01,T20,2024,Malawi,Kenya,11,22,1,0,50.0,0,1
+10,A Alfonso,1435630,2024-06-03,T20,2024,Malawi,Uganda,1,8,0,0,12.5,0,1
+10,A Alfonso,1435639,2024-06-05,T20,2024,Malawi,Botswana,1,7,0,0,14.29,1,0
+10,A Alfonso,1487696,2025-06-03,T20,2025,Malawi,Brazil,5,4,0,0,125.0,0,1
+10,A Alfonso,1487703,2025-06-05,T20,2025,Malawi,Rwanda,0,3,0,0,0.0,1,0
+10,A Alfonso,1487713,2025-06-08,T20,2025,Malawi,Uganda,0,1,0,0,0.0,1,0
+10,A Alfonso,1528321,2026-04-07,T20,2026,Malawi,Brazil,3,7,0,0,42.86,1,0
+10,A Alfonso,1528325,2026-04-08,T20,2026,Malawi,Botswana,1,5,0,0,20.0,1,0
+10,A Alfonso,1528331,2026-04-09,T20,2026,Malawi,Zambia,8,14,1,0,57.14,1,0
+10,A Alfonso,1528335,2026-04-10,T20,2026,Malawi,Zambia,0,1,0,0,0.0,1,0
+10,A Alfonso,1528338,2026-04-11,T20,2026,Malawi,Mozambique,1,2,0,0,50.0,0,1
+100,A Dizija,1317137,2022-06-25,T20,2022,Serbia,Bulgaria,29,22,6,0,131.82,1,0
+100,A Dizija,1317138,2022-06-25,T20,2022,Serbia,Bulgaria,92,57,15,2,161.4,1,0
+100,A Dizija,1317139,2022-06-26,T20,2022,Serbia,Bulgaria,58,52,6,3,111.54,1,0
+100,A Dizija,1321263,2022-07-13,T20,2022,Serbia,Isle of Man,1,10,0,0,10.0,1,0
+100,A Dizija,1321266,2022-07-15,T20,2022,Serbia,Turkey,4,13,0,0,30.77,1,0
+100,A Dizija,1321269,2022-07-16,T20,2022,Serbia,Romania,18,24,1,0,75.0,1,0
+100,A Dizija,1321274,2022-07-18,T20,2022,Serbia,Cyprus,68,62,3,2,109.68,0,1
+100,A Dizija,1321277,2022-07-19,T20,2022,Serbia,Croatia,0,1,0,0,0.0,0,1
+100,A Dizija,1323550,2022-07-08,T20,2022,Serbia,Bulgaria,26,26,3,1,100.0,1,0
+100,A Dizija,1323551,2022-07-09,T20,2022,Serbia,Bulgaria,7,12,0,0,58.33,1,0
+100,A Dizija,1381453,2023-06-23,T20,2023,Serbia,Turkey,91,55,5,6,165.45,1,0
+100,A Dizija,1381455,2023-06-23,T20,2023,Serbia,Bulgaria,15,14,1,1,107.14,1,0
+100,A Dizija,1381457,2023-06-24,T20,2023,Serbia,Croatia,5,5,1,0,100.0,1,0
+100,A Dizija,1400053,2023-10-05,T20,2023/24,Serbia,Gibraltar,6,7,1,0,85.71,1,0
+100,A Dizija,1400054,2023-10-05,T20,2023/24,Serbia,Gibraltar,0,5,0,0,0.0,1,0
+100,A Dizija,1439813,2024-07-07,T20,2024,Serbia,Jersey,4,9,0,0,44.44,0,1
+100,A Dizija,1439823,2024-07-10,T20,2024,Serbia,Croatia,4,20,0,0,20.0,1,0
+100,A Dizija,1439826,2024-07-11,T20,2024,Serbia,Switzerland,15,13,1,1,115.38,1,0
+100,A Dizija,1439829,2024-07-12,T20,2024,Serbia,Belgium,5,11,0,0,45.45,1,0
+100,A Dizija,1452624,2024-09-30,T20,2024,Serbia,Gibraltar,9,11,1,0,81.82,1,0
+100,A Dizija,1452625,2024-09-30,T20,2024,Serbia,Gibraltar,0,1,0,0,0.0,1,0
+100,A Dizija,1486790,2025-06-07,T20,2025,Serbia,Slovenia,79,46,7,6,171.74,0,1
+100,A Dizija,1486791,2025-06-08,T20,2025,Serbia,Slovenia,16,22,3,0,72.73,1,0
+100,A Dizija,1506440,2025-10-31,T20,2025/26,Serbia,Cyprus,2,13,0,0,15.38,1,0
+100,A Dizija,1506441,2025-10-31,T20,2025/26,Serbia,Cyprus,28,26,0,2,107.69,1,0
+100,A Dizija,1506442,2025-11-01,T20,2025/26,Serbia,Bulgaria,2,11,0,0,18.18,1,0
+100,A Dizija,1506443,2025-11-01,T20,2025/26,Serbia,Bulgaria,17,11,2,0,154.55,1,0
+100,A Dizija,1539476,2026-06-26,T20,2026,Serbia,Luxembourg,31,45,2,1,68.89,1,0
+100,A Dizija,1539479,2026-06-27,T20,2026,Serbia,Luxembourg,25,24,4,0,104.17,1,0
+100,A Dizija,1543364,2026-07-08,T20,2026,Serbia,Romania,13,13,1,1,100.0,1,0
+100,A Dizija,1543369,2026-07-10,T20,2026,Serbia,Belgium,11,22,1,0,50.0,1,0
+100,A Dizija,1543374,2026-07-12,T20,2026,Serbia,Gibraltar,3,3,0,0,100.0,1,0
+100,A Dizija,1543377,2026-07-14,T20,2026,Serbia,Estonia,18,17,2,0,105.88,1,0
+1000,Abdulla Pervaiz,1538443,2026-06-01,T20,2026,Bahrain,Hong Kong,40,29,5,2,137.93,1,0
+1000,Abdulla Pervaiz,1538446,2026-06-03,T20,2026,Bahrain,Oman,27,28,4,1,96.43,1,0
+1000,Abdulla Pervaiz,1538450,2026-06-05,T20,2026,Bahrain,Singapore,40,33,3,3,121.21,1,0
+10000,Rashid Hashmi,1444947,2024-08-02,T20,2024,Croatia,Spain,1,17,0,0,5.88,1,0
+10000,Rashid Hashmi,1534043,2026-05-17,T20,2026,Croatia,France,5,10,0,0,50.0,1,0
+10000,Rashid Hashmi,1534053,2026-05-20,T20,2026,Croatia,Jersey,20,17,3,0,117.65,1,0
+10000,Rashid Hashmi,1534060,2026-05-23,T20,2026,Croatia,Austria,28,25,1,1,112.0,1,0
+10001,Rashid Hussain,746097,2014-06-10,ODM,2014,Bahrain,Saudi Arabia,0,4,0,0,0.0,1,0
+10002,Rashid Khan,1063050,2016-11-14,T20,2016/17,Comilla Victorians,Dhaka Dynamites,2,3,0,0,66.67,1,0
+10002,Rashid Khan,1063062,2016-11-13,T20,2016/17,Comilla Victorians,Khulna Titans,10,7,1,1,142.86,0,1
+10002,Rashid Khan,1063075,2016-11-26,T20,2016/17,Comilla Victorians,Dhaka Dynamites,3,4,0,0,75.0,1,0
+10002,Rashid Khan,1063087,2016-12-04,T20,2016/17,Comilla Victorians,Rangpur Riders,11,4,2,0,275.0,0,1
+10002,Rashid Khan,1082600,2017-04-12,T20,2017,Sunrisers Hyderabad,Mumbai Indians,2,4,0,0,50.0,1,0
+10002,Rashid Khan,1082609,2017-04-17,T20,2017,Sunrisers Hyderabad,Kings XI Punjab,6,1,0,1,600.0,0,1
+10002,Rashid Khan,1082634,2017-05-06,T20,2017,Sunrisers Hyderabad,Rising Pune Supergiant,3,4,0,0,75.0,1,0
+10002,Rashid Khan,1094673,2017-08-05,T20,2017,Guyana Amazon Warriors,St Kitts and Nevis Patriots,0,1,0,0,0.0,0,1
+10002,Rashid Khan,1094675,2017-08-06,T20,2017,Guyana Amazon Warriors,St Kitts and Nevis Patriots,0,1,0,0,0.0,0,1
+10002,Rashid Khan,1114867,2017-12-31,T20,2017/18,Adelaide Strikers,Brisbane Heat,6,2,0,1,300.0,1,0
+10002,Rashid Khan,1114872,2018-01-04,T20,2017/18,Adelaide Strikers,Hobart Hurricanes,4,3,0,0,133.33,0,1
+10002,Rashid Khan,1114875,2018-01-07,T20,2017/18,Adelaide Strikers,Sydney Thunder,16,7,0,2,228.57,0,1
+10002,Rashid Khan,1114882,2018-01-13,T20,2017/18,Adelaide Strikers,Perth Scorchers,5,6,0,0,83.33,1,0
+10002,Rashid Khan,1114893,2018-01-25,T20,2017/18,Adelaide Strikers,Perth Scorchers,5,3,1,0,166.67,0,1
+10002,Rashid Khan,1121271,2017-11-25,T20,2017/18,Comilla Victorians,Rajshahi Kings,6,4,1,0,150.0,1,0
+10002,Rashid Khan,1127478,2018-07-13,T20,2018,Sussex,Surrey,1,2,0,0,50.0,1,0
+10002,Rashid Khan,1127513,2018-08-01,T20,2018,Sussex,Gloucestershire,1,2,0,0,50.0,1,0
+10002,Rashid Khan,1127517,2018-08-02,T20,2018,Sussex,Middlesex,4,4,1,0,100.0,1,0
+10002,Rashid Khan,1136567,2018-04-12,T20,2018,Sunrisers Hyderabad,Mumbai Indians,0,1,0,0,0.0,1,0
+10002,Rashid Khan,1136580,2018-04-22,T20,2018,Sunrisers Hyderabad,Chennai Super Kings,17,4,1,2,425.0,0,1
+10002,Rashid Khan,1136583,2018-04-24,T20,2018,Sunrisers Hyderabad,Mumbai Indians,6,9,0,0,66.67,1,0
+10002,Rashid Khan,1136588,2018-04-29,T20,2018,Sunrisers Hyderabad,Rajasthan Royals,1,3,0,0,33.33,1,0
+10002,Rashid Khan,1136599,2018-05-07,T20,2018,Sunrisers Hyderabad,Royal Challengers Bangalore,1,3,0,0,33.33,0,1
+10002,Rashid Khan,1136614,2018-05-19,T20,2018,Sunrisers Hyderabad,Kolkata Knight Riders,0,1,0,0,0.0,1,0
+10002,Rashid Khan,1136619,2018-05-25,T20,2018,Sunrisers Hyderabad,Kolkata Knight Riders,34,11,2,4,309.09,0,1
+10002,Rashid Khan,1141232,2018-05-31,T20,2018,ICC World XI,West Indies,9,8,0,1,112.5,1,0
+10002,Rashid Khan,1152519,2018-12-26,T20,2018/19,Adelaide Strikers,Perth Scorchers,21,12,2,2,175.0,1,0
+10002,Rashid Khan,1152528,2019-01-03,T20,2018/19,Adelaide Strikers,Melbourne Renegades,21,7,2,2,300.0,0,1

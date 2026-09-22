@@ -1,0 +1,101 @@
+match_id,match_date,format,gender,season,venue,city,team1,team2,event_name
+1000851,2016-11-03,Test,male,2016/17,Western Australia Cricket Association Ground,Perth,Australia,South Africa,South Africa in Australia Test Series
+1000853,2016-11-12,Test,male,2016/17,Bellerive Oval,Hobart,Australia,South Africa,South Africa in Australia Test Series
+1000855,2016-11-24,Test,male,2016/17,Adelaide Oval,,Australia,South Africa,South Africa in Australia Test Series
+1000881,2016-12-15,Test,male,2016/17,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Pakistan,Pakistan in Australia Test Series
+1000883,2016-12-26,Test,male,2016/17,Melbourne Cricket Ground,,Australia,Pakistan,Pakistan in Australia Test Series
+1000885,2017-01-03,Test,male,2016/17,Sydney Cricket Ground,,Australia,Pakistan,Pakistan in Australia Test Series
+1000887,2017-01-13,ODI,male,2016/17,"Brisbane Cricket Ground, Woolloongabba",Brisbane,Australia,Pakistan,Pakistan in Australia ODI Series
+1000889,2017-01-15,ODI,male,2016/17,Melbourne Cricket Ground,,Australia,Pakistan,Pakistan in Australia ODI Series
+1000891,2017-01-19,ODI,male,2016/17,Western Australia Cricket Association Ground,Perth,Australia,Pakistan,Pakistan in Australia ODI Series
+1000893,2017-01-22,ODI,male,2016/17,Sydney Cricket Ground,,Australia,Pakistan,Pakistan in Australia ODI Series
+1000895,2017-01-26,ODI,male,2016/17,Adelaide Oval,,Australia,Pakistan,Pakistan in Australia ODI Series
+1001349,2017-02-17,T20,male,2016/17,Melbourne Cricket Ground,,Australia,Sri Lanka,Sri Lanka in Australia T20I Series
+1001351,2017-02-19,T20,male,2016/17,"Simonds Stadium, South Geelong",Victoria,Australia,Sri Lanka,Sri Lanka in Australia T20I Series
+1001353,2017-02-22,T20,male,2016/17,Adelaide Oval,,Australia,Sri Lanka,Sri Lanka in Australia T20I Series
+1001371,2016-12-04,ODI,male,2016/17,Sydney Cricket Ground,,Australia,New Zealand,Chappell-Hadlee Trophy
+1001373,2016-12-06,ODI,male,2016/17,Manuka Oval,Canberra,Australia,New Zealand,Chappell-Hadlee Trophy
+1001375,2016-12-09,ODI,male,2016/17,Melbourne Cricket Ground,,Australia,New Zealand,Chappell-Hadlee Trophy
+1002143,2016-05-02,ODM,male,2016,"Civil Service Cricket Club, Stormont, Belfast",Belfast,Northern Knights,Leinster Lightning,Cricket Ireland Inter-Provincial Limited Over Cup
+1002145,2016-05-30,ODM,male,2016,New Strabane Park,Strabane,Leinster Lightning,North-West Warriors,Cricket Ireland Inter-Provincial Limited Over Cup
+1002147,2016-06-12,ODM,male,2016,"The Vineyard, Dublin",Dublin,North-West Warriors,Leinster Lightning,Cricket Ireland Inter-Provincial Limited Over Cup
+1002149,2016-07-31,ODM,male,2016,"Observatory Lane, Rathmines, Dublin",Dublin,Northern Knights,Leinster Lightning,Cricket Ireland Inter-Provincial Limited Over Cup
+1002151,2016-08-07,ODM,male,2016,"The Lawn, Waringstown",Waringstown,North-West Warriors,Northern Knights,Cricket Ireland Inter-Provincial Limited Over Cup
+1002157,2016-05-27,T20,male,2016,"The Green, Comber",Comber,North-West Warriors,Northern Knights,Cricket Ireland Inter-Provincial Twenty20 Trophy
+1003843,2016-11-12,T20,male,2016/17,"New Wanderers Stadium, Johannesburg",Johannesburg,Knights,Cape Cobras,CSA T20 Challenge
+1003845,2016-11-12,T20,male,2016/17,"New Wanderers Stadium, Johannesburg",Johannesburg,Titans,Lions,CSA T20 Challenge
+1003847,2016-11-13,T20,male,2016/17,"Kingsmead, Durban",Durban,Dolphins,Warriors,CSA T20 Challenge
+1003849,2016-11-16,T20,male,2016/17,"Boland Park, Paarl",Paarl,Cape Cobras,Titans,CSA T20 Challenge
+1003855,2016-11-18,T20,male,2016/17,"Willowmoore Park, Benoni",Benoni,Knights,Titans,CSA T20 Challenge
+1003857,2016-11-20,T20,male,2016/17,"Mangaung Oval, Bloemfontein",Bloemfontein,Titans,Dolphins,CSA T20 Challenge
+1003859,2016-11-20,T20,male,2016/17,"Mangaung Oval, Bloemfontein",Bloemfontein,Warriors,Knights,CSA T20 Challenge
+1003861,2016-11-20,T20,male,2016/17,"Senwes Park, Potchefstroom",Potchefstroom,Lions,Cape Cobras,CSA T20 Challenge
+1003865,2016-11-25,T20,male,2016/17,"St George's Park, Port Elizabeth",Port Elizabeth,Lions,Warriors,CSA T20 Challenge
+1003867,2016-11-25,T20,male,2016/17,"Mangaung Oval, Bloemfontein",Bloemfontein,Knights,Dolphins,CSA T20 Challenge
+1003869,2016-11-25,T20,male,2016/17,"SuperSport Park, Centurion",Centurion,Cape Cobras,Titans,CSA T20 Challenge
+1003871,2016-11-27,T20,male,2016/17,"Diamond Oval, Kimberley",Kimberley,Titans,Knights,CSA T20 Challenge
+1003873,2016-11-27,T20,male,2016/17,"New Wanderers Stadium, Johannesburg",Johannesburg,Lions,Dolphins,CSA T20 Challenge
+1003875,2016-11-30,T20,male,2016/17,"St George's Park, Port Elizabeth",Port Elizabeth,Knights,Warriors,CSA T20 Challenge
+1003877,2016-11-30,T20,male,2016/17,"Kingsmead, Durban",Durban,Titans,Dolphins,CSA T20 Challenge
+1003879,2016-12-02,T20,male,2016/17,"Diamond Oval, Kimberley",Kimberley,Lions,Knights,CSA T20 Challenge
+1003881,2016-12-02,T20,male,2016/17,"SuperSport Park, Centurion",Centurion,Titans,Warriors,CSA T20 Challenge
+1003883,2016-12-04,T20,male,2016/17,"Kingsmead, Durban",Durban,Lions,Warriors,CSA T20 Challenge
+1003885,2016-12-04,T20,male,2016/17,"Kingsmead, Durban",Durban,Dolphins,Cape Cobras,CSA T20 Challenge
+1003887,2016-12-07,T20,male,2016/17,"Newlands, Cape Town",Cape Town,Knights,Cape Cobras,CSA T20 Challenge
+1003889,2016-12-07,T20,male,2016/17,"Buffalo Park, East London",East London,Dolphins,Warriors,CSA T20 Challenge
+1003891,2016-12-07,T20,male,2016/17,"SuperSport Park, Centurion",Centurion,Titans,Lions,CSA T20 Challenge
+1003895,2016-12-09,T20,male,2016/17,"Senwes Park, Potchefstroom",Potchefstroom,Lions,Knights,CSA T20 Challenge
+1003899,2016-12-11,T20,male,2016/17,"Buffalo Park, East London",East London,Titans,Warriors,CSA T20 Challenge
+1003901,2016-12-11,T20,male,2016/17,"Kingsmead, Durban",Durban,Dolphins,Knights,CSA T20 Challenge
+1003903,2016-12-13,T20,male,2016/17,"St George's Park, Port Elizabeth",Port Elizabeth,Lions,Warriors,CSA T20 Challenge
+1003905,2016-12-16,T20,male,2016/17,"SuperSport Park, Centurion",Centurion,Titans,Warriors,CSA T20 Challenge
+1004251,2016-10-16,MDM,male,2016/17,Amini Park,Port Moresby,Papua New Guinea,Namibia,ICC Intercontinental Cup
+1004253,2016-10-21,ODM,male,2016/17,Amini Park,Port Moresby,Papua New Guinea,Namibia,ICC World Cricket League Championship
+1004255,2016-10-23,ODM,male,2016/17,Amini Park,Port Moresby,Papua New Guinea,Namibia,ICC World Cricket League Championship
+1004261,2016-08-13,ODM,male,2016,VRA Ground,Amstelveen,Netherlands,Nepal,ICC World Cricket League Championship
+1004269,2016-11-20,ODM,male,2016/17,Gymkhana Club Ground,Nairobi,Kenya,Hong Kong,ICC World Cricket League Championship
+1004283,2016-09-08,ODI,male,2016,"Grange Cricket Club Ground, Raeburn Place",Edinburgh,Scotland,Hong Kong,Hong Kong in Scotland ODI Series
+1004285,2016-09-10,ODI,male,2016,"Grange Cricket Club Ground, Raeburn Place",Edinburgh,Scotland,Hong Kong,Hong Kong in Scotland ODI Series
+1004729,2016-09-05,T20,male,2016,"Bready Cricket Club, Magheramason",Londonderry,Ireland,Hong Kong,Hong Kong in Ireland T20I Series
+1007649,2016-06-11,ODI,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe ODI Series
+1007651,2016-06-13,ODI,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe ODI Series
+1007653,2016-06-15,ODI,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe ODI Series
+1007655,2016-06-18,T20,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe T20I Series
+1007657,2016-06-20,T20,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe T20I Series
+1007659,2016-06-22,T20,male,2016,Harare Sports Club,,Zimbabwe,India,India in Zimbabwe T20I Series
+1011497,2016-07-21,T20,male,2016,"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,St Lucia Zouks,St Kitts and Nevis Patriots,Caribbean Premier League
+1011501,2016-07-24,T20,male,2016,"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,Guyana Amazon Warriors,St Lucia Zouks,Caribbean Premier League
+1011503,2016-07-26,T20,male,2016,"Daren Sammy National Cricket Stadium, Gros Islet",St Lucia,St Lucia Zouks,Trinbago Knight Riders,Caribbean Premier League
+1014845,2016-05-28,ODM,male,2016,Amini Park,Port Moresby,Papua New Guinea,Kenya,ICC World Cricket League Championship
+1014847,2016-05-30,ODM,male,2016,Amini Park,Port Moresby,Papua New Guinea,Kenya,ICC World Cricket League Championship
+1018873,2016-07-10,T20,male,2016,Providence Stadium,Guyana,Trinbago Knight Riders,Guyana Amazon Warriors,Caribbean Premier League
+1019643,2016-07-11,T20,male,2016,"Kensington Oval, Bridgetown",Barbados,Jamaica Tallawahs,Barbados Tridents,Caribbean Premier League
+1019645,2016-07-13,T20,male,2016,"Kensington Oval, Bridgetown",Barbados,Barbados Tridents,St Kitts and Nevis Patriots,Caribbean Premier League
+1019647,2016-07-16,T20,male,2016,"Kensington Oval, Bridgetown",Barbados,Barbados Tridents,Trinbago Knight Riders,Caribbean Premier League
+1019649,2016-07-17,T20,male,2016,"Kensington Oval, Bridgetown",Barbados,Barbados Tridents,St Lucia Zouks,Caribbean Premier League
+1019769,2016-07-15,T20,male,2016,"Sabina Park, Kingston",Jamaica,Guyana Amazon Warriors,Jamaica Tallawahs,Caribbean Premier League
+1019771,2016-07-16,T20,male,2016,"Sabina Park, Kingston",Jamaica,Jamaica Tallawahs,St Kitts and Nevis Patriots,Caribbean Premier League
+1019773,2016-07-18,T20,male,2016,"Sabina Park, Kingston",Jamaica,Jamaica Tallawahs,Trinbago Knight Riders,Caribbean Premier League
+1019775,2016-07-20,T20,male,2016,"Sabina Park, Kingston",Jamaica,Jamaica Tallawahs,Barbados Tridents,Caribbean Premier League
+1019973,2016-12-26,ODI,male,2016/17,Hagley Oval,Christchurch,New Zealand,Bangladesh,Bangladesh in New Zealand ODI Series
+1019975,2016-12-29,ODI,male,2016/17,Saxton Oval,Nelson,New Zealand,Bangladesh,Bangladesh in New Zealand ODI Series
+1019977,2016-12-31,ODI,male,2016/17,Saxton Oval,Nelson,New Zealand,Bangladesh,Bangladesh in New Zealand ODI Series
+1019979,2017-01-03,T20,male,2016/17,McLean Park,Napier,New Zealand,Bangladesh,Bangladesh in New Zealand T20I Series
+1019981,2017-01-06,T20,male,2016/17,Bay Oval,Mount Maunganui,New Zealand,Bangladesh,Bangladesh in New Zealand T20I Series
+1019983,2017-01-08,T20,male,2016/17,Bay Oval,Mount Maunganui,New Zealand,Bangladesh,Bangladesh in New Zealand T20I Series
+1019985,2017-01-12,Test,male,2016/17,Basin Reserve,Wellington,New Zealand,Bangladesh,Bangladesh in New Zealand Test Series
+1019987,2017-01-20,Test,male,2016/17,Hagley Oval,Christchurch,New Zealand,Bangladesh,Bangladesh in New Zealand Test Series
+1019993,2016-11-17,Test,male,2016/17,Hagley Oval,Christchurch,New Zealand,Pakistan,Pakistan in New Zealand Test Series
+1019995,2016-11-25,Test,male,2016/17,Seddon Park,Hamilton,New Zealand,Pakistan,Pakistan in New Zealand Test Series
+1020013,2017-01-30,ODI,male,2016/17,Eden Park,Auckland,New Zealand,Australia,Chappell-Hadlee Trophy
+1020017,2017-02-05,ODI,male,2016/17,Seddon Park,Hamilton,New Zealand,Australia,Chappell-Hadlee Trophy
+1020029,2017-02-17,T20,male,2016/17,Eden Park,Auckland,New Zealand,South Africa,
+1020031,2017-02-19,ODI,male,2016/17,Seddon Park,Hamilton,New Zealand,South Africa,South Africa in New Zealand ODI Series
+1020033,2017-02-22,ODI,male,2016/17,Hagley Oval,Christchurch,New Zealand,South Africa,South Africa in New Zealand ODI Series
+1020035,2017-02-25,ODI,male,2016/17,Westpac Stadium,Wellington,New Zealand,South Africa,South Africa in New Zealand ODI Series
+1020037,2017-03-01,ODI,male,2016/17,Seddon Park,Hamilton,New Zealand,South Africa,South Africa in New Zealand ODI Series
+1020039,2017-03-04,ODI,male,2016/17,Eden Park,Auckland,New Zealand,South Africa,South Africa in New Zealand ODI Series
+1020041,2017-03-08,Test,male,2016/17,University Oval,Dunedin,New Zealand,South Africa,South Africa in New Zealand Test Series
+1020043,2017-03-16,Test,male,2016/17,Basin Reserve,Wellington,New Zealand,South Africa,South Africa in New Zealand Test Series
+1020045,2017-03-25,Test,male,2016/17,Seddon Park,Hamilton,New Zealand,South Africa,South Africa in New Zealand Test Series
+1022347,2017-06-01,ODI,male,2017,Kennington Oval,London,England,Bangladesh,ICC Champions Trophy
