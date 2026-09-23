@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CRICKET 360 · Players & Matches</title>
+<style>
+  :root { color-scheme: dark; font: 16px/1.5 system-ui, sans-serif; background: #0b1720; color: #eff8f5; }
+  body { max-width: 1100px; margin: auto; padding: 24px; }
+  header { border-bottom: 1px solid #304b50; padding-bottom: 18px; }
+  h1 { font-size: 2rem; margin: 0; } h1 span { color: #75d8ae; }
+  nav { display: flex; gap: 12px; margin: 24px 0; }
+  button, input { font: inherit; border-radius: 9px; padding: 10px 14px; }
+  button { background: #193d43; color: white; border: 1px solid #416869; cursor: pointer; }
+  button.active { background: #75d8ae; color: #092523; }
+  input { width: min(100%, 460px); box-sizing: border-box; background: #132b34; border: 1px solid #416869; color: white; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 12px; margin: 20px 0; }
+  .card { text-align: left; min-height: 112px; background: #132b34; border: 1px solid #2a5156; border-radius: 12px; padding: 16px; }
+  .card strong { display: block; font-size: 1.1rem; } .muted { color: #acc1c2; font-size: .9rem; }
+  .avatar { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #27574e; color: #abf7cb; margin-bottom: 10px; }
+  #detail { border: 1px solid #416869; border-radius: 12px; padding: 20px; margin-top: 16px; }
+  table { width: 100%; border-collapse: collapse; } th, td { text-align: left; padding: 8px; border-bottom: 1px solid #2a5156; }
+  .table-wrap { overflow-x: auto; }
+  @media (max-width: 600px) { body { padding: 14px; } .grid { grid-template-columns: 1fr 1fr; } }
+</style>
+<header><h1>CRICKET <span>360°</span></h1><div class="muted">Historical players, matches and deeper analytics</div></header>
+<nav><button id="playersTab" class="active">Players</button><button id="matchesTab">Matches</button></nav>
+<main><input id="search" aria-label="Search players" placeholder="Search a player by name"><div id="status" role="status"></div><div id="results" class="grid"></div><section id="detail" hidden></section><button id="more" hidden>Load more</button></main>
+<script>
+  const $ = id => document.getElementById(id);
+  let mode = 'players', offset = 0, lastQuery = '';
+  function el(tag, className, value) {
+    const node = document.createElement(tag); node.className = className; node.textContent = value ?? ''; return node;
+  }
+  async function get(url) {
+    const response = await fetch(url);
+    if (!response.ok) throw new Error((await response.json()).detail || 'Could not load data');
+    return response.json();
+  }
+  async function load(reset = true) {
+    if (reset) { offset = 0; $('results').replaceChildren(); $('detail').hidden = true; }
+    const query = $('search').value.trim(); lastQuery = query;
+    $('status').textContent = 'Loading…';
+    try {
+      const url = mode === 'players' ? `/api/players?q=${encodeURIComponent(query)}&offset=${offset}` : `/api/matches?offset=${offset}`;
+      const rows = await get(url);
+      if (query !== lastQuery) return;
+      rows.forEach(row => {
+        const card = el('button', 'card', '');
+        if (mode === 'players') {
+          card.append(el('span', 'avatar', (row.display_name || '?').slice(0, 1).toUpperCase()));
+          card.append(el('strong', '', row.display_name));
+          card.append(el('span', 'muted', [row.country, row.role].filter(Boolean).join(' · ')));
+          card.onclick = () => showPlayer(row.player_id);
+        } else {
+          card.append(el('strong', '', `${row.team1} vs ${row.team2}`));
+          card.append(el('span', 'muted', `${row.match_date || ''} · ${row.format || ''}`));
+          if (row.Team1_Runs !== null) card.append(el('div', 'muted', `Aggregate innings totals · ${row.team1} ${row.Team1_Runs}/${row.Team1_Wickets} · ${row.team2} ${row.Team2_Runs}/${row.Team2_Wickets}`));
+          card.append(el('div', 'muted', row.event_name || row.venue || ''));
+          card.onclick = () => showMatch(row.match_id);
+        }
+        $('results').append(card);
+      });
+      offset += rows.length;
+      $('more').hidden = rows.length < (mode === 'players' ? 30 : 25);
+      $('status').textContent = $('results').children.length ? '' : 'No results found';
+    } catch (error) { $('status').textContent = error.message; $('more').hidden = true; }
+  }
+  function addTable(container, heading, data, columns) {
+    container.append(el('h3', '', heading));
+    if (!data.length) { container.append(el('p', 'muted', 'No recorded data')); return; }
+    const table = document.createElement('table'), head = document.createElement('tr');
+    columns.forEach(name => head.append(el('th', '', name.replaceAll('_', ' ')))); table.append(head);
+    data.forEach(row => {
+      const tr = document.createElement('tr');
+      columns.forEach(name => tr.append(el('td', '', row[name] ?? '—')));
+      table.append(tr);
+    });
+    const wrapper = el('div', 'table-wrap', ''); wrapper.append(table); container.append(wrapper);
+  }
+  async function showPlayer(id) {
+    const detail = $('detail'); detail.hidden = false; detail.replaceChildren(el('p', '', 'Loading profile…'));
+    try {
+      const {profile, career_batting: career, batting_by_format: formats, batting_vs_team: opponents, recent_batting: batting, recent_bowling: bowling} = await get(`/api/players/${id}`);
+      detail.replaceChildren(el('h2', '', profile.full_name || profile.display_name));
+      detail.append(el('p', 'muted', [profile.country, profile.role, profile.batting_style, profile.bowling_style].filter(Boolean).join(' · ')));
+      if (career) detail.append(el('p', '', `Career batting: ${career.Matches} matches · ${career.Runs} runs · Average ${career.Batting_Average} · SR ${career.Strike_Rate}`));
+      addTable(detail, 'Batting by format', formats, ['format', 'matches', 'runs', 'balls', 'dismissals']);
+      addTable(detail, 'Top opponents by runs', opponents, ['opponent_team', 'matches', 'runs', 'balls']);
+      for (const [heading, data, columns] of [
+        ['Recent batting', batting, ['match_date', 'opponent_team', 'Runs', 'Balls_Faced']],
+        ['Recent bowling', bowling, ['match_date', 'opponent_team', 'wickets', 'runs_conceded']]
+      ]) addTable(detail, heading, data, columns);
+      detail.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } catch (error) { detail.replaceChildren(el('p', '', error.message)); }
+  }
+  async function showMatch(id) {
+    const detail = $('detail'); detail.hidden = false; detail.replaceChildren(el('p', '', 'Loading match…'));
+    try {
+      const {match, batting, bowling} = await get(`/api/matches/${id}`);
+      detail.replaceChildren(el('h2', '', `${match.team1} vs ${match.team2}`));
+      detail.append(el('p', 'muted', [match.match_date, match.format, match.event_name, match.venue].filter(Boolean).join(' · ')));
+      if (match.Team1_Runs !== null) detail.append(el('p', '', `Aggregate innings totals: ${match.team1} ${match.Team1_Runs}/${match.Team1_Wickets} · ${match.team2} ${match.Team2_Runs}/${match.Team2_Wickets}`));
+      detail.append(el('p', 'muted', 'Player figures below are match totals. Innings splits, playing XI and result need a separate verified source.'));
+      addTable(detail, 'Batting', batting, ['team', 'player', 'Runs', 'Balls_Faced', 'Fours', 'Sixes']);
+      addTable(detail, 'Bowling', bowling, ['team', 'player', 'wickets', 'runs_conceded', 'legal_balls', 'Economy']);
+      detail.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } catch (error) { detail.replaceChildren(el('p', '', error.message)); }
+  }
+  $('playersTab').onclick = () => { mode = 'players'; $('playersTab').classList.add('active'); $('matchesTab').classList.remove('active'); $('search').hidden = false; load(); };
+  $('matchesTab').onclick = () => { mode = 'matches'; $('matchesTab').classList.add('active'); $('playersTab').classList.remove('active'); $('search').hidden = true; load(); };
+  let timer; $('search').oninput = () => { clearTimeout(timer); timer = setTimeout(() => load(), 200); };
+  $('more').onclick = () => load(false);
+  load();
+</script>
+</html>
