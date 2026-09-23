@@ -19,6 +19,7 @@
   .avatar { display: inline-grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #27574e; color: #abf7cb; margin-bottom: 10px; }
   #detail { border: 1px solid #416869; border-radius: 12px; padding: 20px; margin-top: 16px; }
   table { width: 100%; border-collapse: collapse; } th, td { text-align: left; padding: 8px; border-bottom: 1px solid #2a5156; }
+  .table-wrap { overflow-x: auto; }
   @media (max-width: 600px) { body { padding: 14px; } .grid { grid-template-columns: 1fr 1fr; } }
 </style>
 <header><h1>CRICKET <span>360°</span></h1><div class="muted">Historical players, matches and deeper analytics</div></header>
@@ -55,6 +56,7 @@
           card.append(el('span', 'muted', `${row.match_date || ''} · ${row.format || ''}`));
           if (row.Team1_Runs !== null) card.append(el('div', 'muted', `Aggregate innings totals · ${row.team1} ${row.Team1_Runs}/${row.Team1_Wickets} · ${row.team2} ${row.Team2_Runs}/${row.Team2_Wickets}`));
           card.append(el('div', 'muted', row.event_name || row.venue || ''));
+          card.onclick = () => showMatch(row.match_id);
         }
         $('results').append(card);
       });
@@ -63,24 +65,44 @@
       $('status').textContent = $('results').children.length ? '' : 'No results found';
     } catch (error) { $('status').textContent = error.message; $('more').hidden = true; }
   }
+  function addTable(container, heading, data, columns) {
+    container.append(el('h3', '', heading));
+    if (!data.length) { container.append(el('p', 'muted', 'No recorded data')); return; }
+    const table = document.createElement('table'), head = document.createElement('tr');
+    columns.forEach(name => head.append(el('th', '', name.replaceAll('_', ' ')))); table.append(head);
+    data.forEach(row => {
+      const tr = document.createElement('tr');
+      columns.forEach(name => tr.append(el('td', '', row[name] ?? '—')));
+      table.append(tr);
+    });
+    const wrapper = el('div', 'table-wrap', ''); wrapper.append(table); container.append(wrapper);
+  }
   async function showPlayer(id) {
     const detail = $('detail'); detail.hidden = false; detail.replaceChildren(el('p', '', 'Loading profile…'));
     try {
-      const {profile, career_batting: career, recent_batting: batting, recent_bowling: bowling} = await get(`/api/players/${id}`);
+      const {profile, career_batting: career, batting_by_format: formats, batting_vs_team: opponents, recent_batting: batting, recent_bowling: bowling} = await get(`/api/players/${id}`);
       detail.replaceChildren(el('h2', '', profile.full_name || profile.display_name));
       detail.append(el('p', 'muted', [profile.country, profile.role, profile.batting_style, profile.bowling_style].filter(Boolean).join(' · ')));
       if (career) detail.append(el('p', '', `Career batting: ${career.Matches} matches · ${career.Runs} runs · Average ${career.Batting_Average} · SR ${career.Strike_Rate}`));
+      addTable(detail, 'Batting by format', formats, ['format', 'matches', 'runs', 'balls', 'dismissals']);
+      addTable(detail, 'Top opponents by runs', opponents, ['opponent_team', 'matches', 'runs', 'balls']);
       for (const [heading, data, columns] of [
         ['Recent batting', batting, ['match_date', 'opponent_team', 'Runs', 'Balls_Faced']],
         ['Recent bowling', bowling, ['match_date', 'opponent_team', 'wickets', 'runs_conceded']]
-      ]) {
-        detail.append(el('h3', '', heading));
-        if (!data.length) { detail.append(el('p', 'muted', 'No recorded matches')); continue; }
-        const table = document.createElement('table'), head = document.createElement('tr');
-        columns.forEach(name => head.append(el('th', '', name.replaceAll('_', ' ')))); table.append(head);
-        data.forEach(row => { const tr = document.createElement('tr'); columns.forEach(name => tr.append(el('td', '', row[name] ?? '—'))); table.append(tr); });
-        detail.append(table);
-      }
+      ]) addTable(detail, heading, data, columns);
+      detail.scrollIntoView({behavior: 'smooth', block: 'start'});
+    } catch (error) { detail.replaceChildren(el('p', '', error.message)); }
+  }
+  async function showMatch(id) {
+    const detail = $('detail'); detail.hidden = false; detail.replaceChildren(el('p', '', 'Loading match…'));
+    try {
+      const {match, batting, bowling} = await get(`/api/matches/${id}`);
+      detail.replaceChildren(el('h2', '', `${match.team1} vs ${match.team2}`));
+      detail.append(el('p', 'muted', [match.match_date, match.format, match.event_name, match.venue].filter(Boolean).join(' · ')));
+      if (match.Team1_Runs !== null) detail.append(el('p', '', `Aggregate innings totals: ${match.team1} ${match.Team1_Runs}/${match.Team1_Wickets} · ${match.team2} ${match.Team2_Runs}/${match.Team2_Wickets}`));
+      detail.append(el('p', 'muted', 'Player figures below are match totals. Innings splits, playing XI and result need a separate verified source.'));
+      addTable(detail, 'Batting', batting, ['team', 'player', 'Runs', 'Balls_Faced', 'Fours', 'Sixes']);
+      addTable(detail, 'Bowling', bowling, ['team', 'player', 'wickets', 'runs_conceded', 'legal_balls', 'Economy']);
       detail.scrollIntoView({behavior: 'smooth', block: 'start'});
     } catch (error) { detail.replaceChildren(el('p', '', error.message)); }
   }
