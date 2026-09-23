@@ -74,6 +74,8 @@ def main() -> None:
             conn.execute("CREATE INDEX idx_player_name ON players(display_name)")
             conn.execute("CREATE INDEX idx_batting_player ON batting(player_id)")
             conn.execute("CREATE INDEX idx_bowling_player ON bowling(player_id)")
+            conn.execute("CREATE INDEX idx_batting_match ON batting(match_id)")
+            conn.execute("CREATE INDEX idx_bowling_match ON bowling(match_id)")
             conn.execute("CREATE INDEX idx_match_date ON matches(match_date)")
             conn.execute("CREATE INDEX idx_summary_date ON match_summary(match_date)")
             conn.execute("CREATE INDEX idx_summary_match ON match_summary(match_id)")
