@@ -53,10 +53,31 @@ def main() -> None:
                 if not path.exists():
                     raise FileNotFoundError(f"Missing {stem}.csv in {args.data_dir}")
                 print(f"{table}: {import_csv(conn, table, path):,} rows")
+            summary_path = args.data_dir / "match_summary.csv"
+            if summary_path.exists():
+                print(f"match_summary: {import_csv(conn, 'match_summary', summary_path):,} rows")
+            else:
+                # Repository samples do not ship the production match summary.
+                conn.execute(
+                    "CREATE TABLE match_summary AS SELECT match_id, match_date, format, gender, "
+                    "season, team1, team2, NULL AS Team1_Runs, NULL AS Team2_Runs, "
+                    "NULL AS Team1_Wickets, NULL AS Team2_Wickets FROM matches"
+                )
+            player_summary_path = args.data_dir / "player_summary.csv"
+            if player_summary_path.exists():
+                print(f"player_summary: {import_csv(conn, 'player_summary', player_summary_path):,} rows")
+            else:
+                conn.execute(
+                    "CREATE TABLE player_summary (player_id TEXT, Matches TEXT, Runs TEXT, "
+                    "Batting_Average TEXT, Strike_Rate TEXT)"
+                )
             conn.execute("CREATE INDEX idx_player_name ON players(display_name)")
             conn.execute("CREATE INDEX idx_batting_player ON batting(player_id)")
             conn.execute("CREATE INDEX idx_bowling_player ON bowling(player_id)")
             conn.execute("CREATE INDEX idx_match_date ON matches(match_date)")
+            conn.execute("CREATE INDEX idx_summary_date ON match_summary(match_date)")
+            conn.execute("CREATE INDEX idx_summary_match ON match_summary(match_id)")
+            conn.execute("CREATE INDEX idx_player_summary ON player_summary(player_id)")
         temp_path.replace(args.database)
         print(f"Database: {args.database}")
     finally:
