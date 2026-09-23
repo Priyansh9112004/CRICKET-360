@@ -53,6 +53,7 @@
         } else {
           card.append(el('strong', '', `${row.team1} vs ${row.team2}`));
           card.append(el('span', 'muted', `${row.match_date || ''} · ${row.format || ''}`));
+          if (row.Team1_Runs !== null) card.append(el('div', 'muted', `Aggregate innings totals · ${row.team1} ${row.Team1_Runs}/${row.Team1_Wickets} · ${row.team2} ${row.Team2_Runs}/${row.Team2_Wickets}`));
           card.append(el('div', 'muted', row.event_name || row.venue || ''));
         }
         $('results').append(card);
@@ -65,9 +66,10 @@
   async function showPlayer(id) {
     const detail = $('detail'); detail.hidden = false; detail.replaceChildren(el('p', '', 'Loading profile…'));
     try {
-      const {profile, recent_batting: batting, recent_bowling: bowling} = await get(`/api/players/${id}`);
+      const {profile, career_batting: career, recent_batting: batting, recent_bowling: bowling} = await get(`/api/players/${id}`);
       detail.replaceChildren(el('h2', '', profile.full_name || profile.display_name));
       detail.append(el('p', 'muted', [profile.country, profile.role, profile.batting_style, profile.bowling_style].filter(Boolean).join(' · ')));
+      if (career) detail.append(el('p', '', `Career batting: ${career.Matches} matches · ${career.Runs} runs · Average ${career.Batting_Average} · SR ${career.Strike_Rate}`));
       for (const [heading, data, columns] of [
         ['Recent batting', batting, ['match_date', 'opponent_team', 'Runs', 'Balls_Faced']],
         ['Recent bowling', bowling, ['match_date', 'opponent_team', 'wickets', 'runs_conceded']]
