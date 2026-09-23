@@ -1,6 +1,6 @@
 # CRICKET 360 website — first working version
 
-This is an initial read-only player and historical-match explorer. It intentionally does not claim to show live matches, upcoming series, news, or social posts until permitted data sources are connected. Player photos are withheld until identity checks and public-use rights are resolved.
+This is an initial read-only player and historical-match explorer, with format/opponent breakdowns and match batting/bowling totals. It intentionally does not claim to show live matches, upcoming series, news, or social posts until permitted data sources are connected. Player photos are withheld until identity checks and public-use rights are resolved. The match summary combines innings for multi-innings formats and is not a conventional innings-by-innings scorecard.
 
 ## Run with the GitHub samples
 
